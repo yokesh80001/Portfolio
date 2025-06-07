@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yokesh Kumar | Digital Marketing Leader</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #1e1e2f;
+      --accent: #f43f5e;
+      --background: #f9fafb;
+      --text: #1e293b;
+      --muted: #6b7280;
+      --light: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?fit=crop&w=1600&q=80') center/cover;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: var(--light);
+      animation: fadeInDown 1.2s ease-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #f3f4f6;
+      margin-top: 1rem;
+      animation: fadeInUp 1.4s ease-out;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      background: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+    }
+    nav a:hover {
+      color: var(--accent);
+      transform: scale(1.1);
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--accent);
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+    .card::before {
+      content: '\f0e7';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--accent);
+      font-size: 1.5rem;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .contact-block {
+      background: linear-gradient(to right, #f43f5e, #be123c);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-radius: 10px;
+      animation: fadeInUp 1s ease-out;
+    }
+    .contact-block a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      color: white;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .contact-block a:hover {
+      background: white;
+      color: #f43f5e;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yokesh Kumar</h1>
+    <p>Digital Marketing Leader | Performance Strategist | Growth Architect</p>
+    <p>📍 Bangalore, India &nbsp; | &nbsp; 📧 <a href="mailto:yokesh80001@gmail.com" style="color:#fbbf24">yokesh80001@gmail.com</a></p>
+  </header>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="projects">
+    <h2 class="section-title">Key Projects & Results</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Optimization Automation with ML</h3>
+        <p>Improved ROAS by 33% by deploying ML-based campaign optimization. Cut manual hours by 40%.</p>
+      </div>
+      <div class="card">
+        <h3>SA360 In-House Migration</h3>
+        <p>Moved SEM operations internally, unlocking 15–20% cost efficiency. Upskilled team in bid strategies.</p>
+      </div>
+      <div class="card">
+        <h3>Lego Viewability & Efficiency Upgrade</h3>
+        <p>Boosted viewability above 80% via PMPs and mobile-first creatives. Increased CTR by 25%.</p>
+      </div>
+      <div class="card">
+        <h3>ACT Fibernet Metro Campaigns</h3>
+        <p>Localized campaigns in high-competition cities. Achieved 3x ROAS and +25% MQL conversion.</p>
+      </div>
+      <div class="card">
+        <h3>Toyota India Full-Funnel Lead Strategy</h3>
+        <p>Achieved 3.2x ROAS and −28% CPL via custom creatives, CRM sync, and regional targeting.</p>
+      </div>
+      <div class="card">
+        <h3>D2C Growth – Wipro Brands</h3>
+        <p>Scaled Santoor, Yardley & Enchanteur via CRM automation and CRO. 2.3x sales increase in 6 months.</p>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Target Corporation</h3>
+        <p>Lead – Performance Media (2019–Present)</p>
+        <p>Oversaw $147M media budget. Clients: Apple, Lego, Disney+.</p>
+      </div>
+      <div class="card">
+        <h3>Interactive Avenues</h3>
+        <p>Group Head – Biddable Media (2015–2019)</p>
+        <p>Clients: Amazon, Toyota, Wipro, Jockey. Delivered 8.25% avg. CVR.</p>
+      </div>
+      <div class="card">
+        <h3>Paragon Digital</h3>
+        <p>Assistant Account Manager (2011–2015)</p>
+        <p>PPC campaigns for Nike, M&S, Virgin. 8–10% conversion rates.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Skills</h3>
+        <p>Paid Media, SEM, SMM, Programmatic, Attribution, CRM, Growth Marketing, Leadership</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>Google Ads, Meta Ads, GA4, DV360, SA360, TTD, Adobe Cloud, Salesforce, CDPs, DMPs</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="contact-block">
+      <h3>Let's Connect</h3>
+      <p>Open to leadership roles in digital marketing, paid media, and growth strategy. Let’s collaborate.</p>
+      <a href="mailto:yokesh80001@gmail.com">📧 yokesh80001@gmail.com</a>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Yokesh Kumar. Crafted to showcase growth through results.</p>
+  </footer>
+</body>
+</html>
